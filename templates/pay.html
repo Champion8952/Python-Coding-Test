@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Payment</title>
+	
+</head>
+<body>
+	<div class="container text-center p-5">
+			<img src= "https://upload.wikimeida.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG" class="img-fluid "style="height:300px">
+
+			<form action="/success" class ="mt-3" method="POST">
+			<script
+			    src="https://checkout.razorpay.com/v1/checkout.js"
+			    data-key="rzp_test_octynudc0TmyFy"
+			    data-amount="{{payment['amount']}}" 
+			    data-currency="EUR"
+			    data-order_id="{{payment['order_id']}}"
+			    data-buttontext="Pay with Razorpay"
+			    data-name="Filed"
+			    
+			    data-theme.color="#F37254"
+			></script>
+<input type="hidden" custom="Hidden Element" name="hidden">
+</form>
+	</div>	
+</body>
+
+QaFDnthl7eTVoXGGXlzVgcuR

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+  
+  <div class ="container">
+
+    <div class ="row">
+      <div class ="container text-center p-5 ">
+        <img src = "https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG" class="img-fluid" style="height: 300px">
+      </div>
+
+      <div class ="col-lg-6">
+
+        <h3> Donate </h3>
+        <p> Payment Details</p>
+
+        <form method ="post">
+
+          
+          <input class="form-control" name ="amount" placeholder="Amount" type="number" required>
+
+          <button class ="btn btn-success btn-block">PAYMENT</button>
+        </form>
+
+ 
+{% endblock %}
